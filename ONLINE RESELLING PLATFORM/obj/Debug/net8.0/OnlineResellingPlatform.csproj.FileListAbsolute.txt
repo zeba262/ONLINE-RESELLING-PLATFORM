@@ -1,0 +1,4 @@
+C:\Users\ASUS\source\repos\ONLINE RESELLING PLATFORM\ONLINE RESELLING PLATFORM\obj\Debug\net8.0\OnlineResellingPlatform.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\source\repos\ONLINE RESELLING PLATFORM\ONLINE RESELLING PLATFORM\obj\Debug\net8.0\OnlineResellingPlatform.AssemblyInfoInputs.cache
+C:\Users\ASUS\source\repos\ONLINE RESELLING PLATFORM\ONLINE RESELLING PLATFORM\obj\Debug\net8.0\OnlineResellingPlatform.AssemblyInfo.cs
+C:\Users\ASUS\source\repos\ONLINE RESELLING PLATFORM\ONLINE RESELLING PLATFORM\obj\Debug\net8.0\OnlineResellingPlatform.csproj.CoreCompileInputs.cache
