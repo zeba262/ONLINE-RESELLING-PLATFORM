@@ -1,13 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-
 using ONLINE_RESELLING_PLATFORM.Initialize;
 using ONLINE_RESELLING_PLATFORM.Interfaces;
 using ONLINE_RESELLING_PLATFORM.ManageProduct;
 using ONLINE_RESELLING_PLATFORM.OrderManagement;
 using ONLINE_RESELLING_PLATFORM.UserFeedback;
-
 
 namespace ONLINE_RESELLING_PLATFORM.Authentication
 {
@@ -17,7 +14,7 @@ namespace ONLINE_RESELLING_PLATFORM.Authentication
         public List<Product> products;
         public List<(string Buyer, int ProductId)> orders;
 
-        public UserMenu(User user, List<Product> products, List<(string, int)> orders)
+        public UserMenu(User user, List<Product> products, List<(string Buyer, int ProductId)> orders)
         {
             this.user = user;
             this.products = products;
@@ -26,10 +23,8 @@ namespace ONLINE_RESELLING_PLATFORM.Authentication
 
         public void Execute()
         {
-            FeedbackManager f = new FeedbackManager();
+            FeedbackManager feedbackManager = new FeedbackManager();
             string choice;
-            string sellerUsername, feedback;
-            int rating;
 
             if (user.Role == "1") // Seller
             {
@@ -40,33 +35,35 @@ namespace ONLINE_RESELLING_PLATFORM.Authentication
                     Console.WriteLine("2. Add Product");
                     Console.WriteLine("3. Update Product");
                     Console.WriteLine("4. Delete Product");
-                    Console.WriteLine("5. Feedback");
+                    Console.WriteLine("5. View & Add Feedback");
                     Console.WriteLine("6. Logout");
                     Console.Write("Enter your choice: ");
                     choice = Console.ReadLine();
 
-                    if (choice == "1")
-                        new ViewProducts(products).Execute();
-                    else if (choice == "2")
-                        new AddProduct(products, user.Username).Execute();
-                    else if (choice == "3")
-                        new UpdateProduct(products).Execute();
-
-
-                    else if (choice == "4")
-                        new DeleteProduct(products).Execute();
-
-                    else if (choice == "5")
+                    switch (choice)
                     {
-
-                        f.AddSellerFeedback(sellerUsername, feedback, rating);
-                        f.ViewFeedbacks();
-                        f.ViewSellerRating(sellerUsername);
+                        case "1":
+                            new ViewProducts(products).Execute();
+                            break;
+                        case "2":
+                            new AddProduct(products, user.Username).Execute();
+                            break;
+                        case "3":
+                            new UpdateProduct(products).Execute();
+                            break;
+                        case "4":
+                            new DeleteProduct(products).Execute();
+                            break;
+                        case "5":
+                            HandleSellerFeedback(feedbackManager);
+                            break;
+                        case "6":
+                            Console.WriteLine("Logged out successfully!");
+                            break;
+                        default:
+                            Console.WriteLine("Invalid choice, please try again.");
+                            break;
                     }
-                    else if (choice == "6")
-                        Console.WriteLine("Logged out successfully!");
-                    else
-                        Console.WriteLine("Invalid choice, please try again.");
 
                 } while (choice != "6");
             }
@@ -82,16 +79,24 @@ namespace ONLINE_RESELLING_PLATFORM.Authentication
                     Console.Write("Enter your choice: ");
                     choice = Console.ReadLine();
 
-                    if (choice == "1")
-                        new ViewProducts(products).Execute();
-                    else if (choice == "2")
-                        new PlaceOrder(products, orders).Execute();
-                    else if (choice == "3")
-                        new BuyerFeedback(products, orders).Execute();
-                    else if (choice == "4")
-                        Console.WriteLine("Logged out successfully!");
-                    else
-                        Console.WriteLine("Invalid choice, please try again.");
+                    switch (choice)
+                    {
+                        case "1":
+                            new ViewProducts(products).Execute();
+                            break;
+                        case "2":
+                            new PlaceOrder(products, orders).Execute();
+                            break;
+                        case "3":
+                            new BuyerFeedback(products, orders).Execute();
+                            break;
+                        case "4":
+                            Console.WriteLine("Logged out successfully!");
+                            break;
+                        default:
+                            Console.WriteLine("Invalid choice, please try again.");
+                            break;
+                    }
 
                 } while (choice != "4");
             }
@@ -100,6 +105,24 @@ namespace ONLINE_RESELLING_PLATFORM.Authentication
                 Console.WriteLine("Invalid role.");
             }
         }
+
+        private void HandleSellerFeedback(FeedbackManager feedbackManager)
+        {
+            Console.Write("\nEnter Seller Username: ");
+            string sellerUsername = Console.ReadLine();
+
+            Console.Write("Enter Feedback: ");
+            string feedback = Console.ReadLine();
+
+            int rating;
+            do
+            {
+                Console.Write("Enter Rating (1-5): ");
+            } while (!int.TryParse(Console.ReadLine(), out rating) || rating < 1 || rating > 5);
+
+        }
+
     }
 
 }
+

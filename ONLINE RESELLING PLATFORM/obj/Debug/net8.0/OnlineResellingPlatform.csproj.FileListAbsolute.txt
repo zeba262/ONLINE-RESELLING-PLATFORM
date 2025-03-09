@@ -2,3 +2,14 @@ C:\Users\ASUS\source\repos\ONLINE RESELLING PLATFORM\ONLINE RESELLING PLATFORM\o
 C:\Users\ASUS\source\repos\ONLINE RESELLING PLATFORM\ONLINE RESELLING PLATFORM\obj\Debug\net8.0\OnlineResellingPlatform.AssemblyInfoInputs.cache
 C:\Users\ASUS\source\repos\ONLINE RESELLING PLATFORM\ONLINE RESELLING PLATFORM\obj\Debug\net8.0\OnlineResellingPlatform.AssemblyInfo.cs
 C:\Users\ASUS\source\repos\ONLINE RESELLING PLATFORM\ONLINE RESELLING PLATFORM\obj\Debug\net8.0\OnlineResellingPlatform.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\source\repos\ONLINE RESELLING PLATFORM\ONLINE RESELLING PLATFORM\obj\Debug\net8.0\OnlineResellingPlatform.sourcelink.json
+C:\Users\ASUS\source\repos\ONLINE RESELLING PLATFORM\ONLINE RESELLING PLATFORM\bin\Debug\net8.0\OnlineResellingPlatform.exe
+C:\Users\ASUS\source\repos\ONLINE RESELLING PLATFORM\ONLINE RESELLING PLATFORM\bin\Debug\net8.0\OnlineResellingPlatform.deps.json
+C:\Users\ASUS\source\repos\ONLINE RESELLING PLATFORM\ONLINE RESELLING PLATFORM\bin\Debug\net8.0\OnlineResellingPlatform.runtimeconfig.json
+C:\Users\ASUS\source\repos\ONLINE RESELLING PLATFORM\ONLINE RESELLING PLATFORM\bin\Debug\net8.0\OnlineResellingPlatform.dll
+C:\Users\ASUS\source\repos\ONLINE RESELLING PLATFORM\ONLINE RESELLING PLATFORM\bin\Debug\net8.0\OnlineResellingPlatform.pdb
+C:\Users\ASUS\source\repos\ONLINE RESELLING PLATFORM\ONLINE RESELLING PLATFORM\obj\Debug\net8.0\OnlineResellingPlatform.dll
+C:\Users\ASUS\source\repos\ONLINE RESELLING PLATFORM\ONLINE RESELLING PLATFORM\obj\Debug\net8.0\refint\OnlineResellingPlatform.dll
+C:\Users\ASUS\source\repos\ONLINE RESELLING PLATFORM\ONLINE RESELLING PLATFORM\obj\Debug\net8.0\OnlineResellingPlatform.pdb
+C:\Users\ASUS\source\repos\ONLINE RESELLING PLATFORM\ONLINE RESELLING PLATFORM\obj\Debug\net8.0\OnlineResellingPlatform.genruntimeconfig.cache
+C:\Users\ASUS\source\repos\ONLINE RESELLING PLATFORM\ONLINE RESELLING PLATFORM\obj\Debug\net8.0\ref\OnlineResellingPlatform.dll

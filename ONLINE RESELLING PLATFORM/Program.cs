@@ -7,7 +7,7 @@ using ONLINE_RESELLING_PLATFORM.Initialize;
 using ONLINE_RESELLING_PLATFORM.Interfaces;
 using ONLINE_RESELLING_PLATFORM.ManageProduct;
 using ONLINE_RESELLING_PLATFORM.OrderManagement;
-using ONLINE_RESELLING_PLATFORM.UserFeedback.SellerFeedback;
+using ONLINE_RESELLING_PLATFORM.UserFeedback;
 
 
 
@@ -15,6 +15,7 @@ class Program
 {
     static List<(string Buyer, int ProductId)> orders = new List<(string, int)>();
     static List<User> users = new List<User>();
+  
     static List<Product> products = new List<Product>();
 
     static void Main()
@@ -46,7 +47,7 @@ class Program
                 if (userType == "1") // Admin
                 {
                     if (username == adminUsername && password == adminPassword)
-                        new AdminMenu(users, products,feedbackManager).Execute();
+                        new AdminMenu(users, products).Execute();
                     else
                         Console.WriteLine("Invalid Admin credentials!");
                 }

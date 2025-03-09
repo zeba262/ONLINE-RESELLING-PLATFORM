@@ -5,7 +5,9 @@ using ONLINE_RESELLING_PLATFORM.Initialize;
 using ONLINE_RESELLING_PLATFORM.Interfaces;
 using ONLINE_RESELLING_PLATFORM.ManageProduct;
 using ONLINE_RESELLING_PLATFORM.OrderManagement;
-using ONLINE_RESELLING_PLATFORM.UserFeedback;   
+using ONLINE_RESELLING_PLATFORM.UserFeedback;
+
+
 
 namespace ONLINE_RESELLING_PLATFORM.Authentication
 {
@@ -13,13 +15,19 @@ namespace ONLINE_RESELLING_PLATFORM.Authentication
     {
         private List<User> users;
         private List<Product> products;
-        private FeedbackManager feedbackManager;
 
-        public AdminMenu(List<User> users, List<Product> products, FeedbackManager feedbackManager)
+    
+
+        FeedbackManager f = new FeedbackManager();
+
+        private List<(string Buyer, int ProductId)> orders;
+
+        public AdminMenu(List<User> users, List<Product> products)
         {
             this.users = users;
             this.products = products;
-            this.feedbackManager = feedbackManager;
+        
+            
         }
 
         public void Execute()
@@ -45,11 +53,13 @@ namespace ONLINE_RESELLING_PLATFORM.Authentication
                         Console.WriteLine($"Total Products: {products.Count}");
                         break;
                     case "3":
-                        new BuyerFeedback.Execute(products,orders);
+                        new BuyerFeedback( products, orders).Execute();
                         break;
+                    
                     case "4":
-                        feedbackManager.ViewFeedbacks();
-                        feedbackManager.ViewSellerRating(sellerUsername);
+                        f.ViewAllSellerFeedbacksAndRatings(); // Display all seller feedback and ratings
+                        break;
+
                         break;
                     case "5":
                         ViewAllProducts();
