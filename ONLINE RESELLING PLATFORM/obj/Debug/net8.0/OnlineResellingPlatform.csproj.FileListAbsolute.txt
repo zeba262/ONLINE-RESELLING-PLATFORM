@@ -13,3 +13,18 @@ C:\Users\ASUS\source\repos\ONLINE RESELLING PLATFORM\ONLINE RESELLING PLATFORM\o
 C:\Users\ASUS\source\repos\ONLINE RESELLING PLATFORM\ONLINE RESELLING PLATFORM\obj\Debug\net8.0\OnlineResellingPlatform.pdb
 C:\Users\ASUS\source\repos\ONLINE RESELLING PLATFORM\ONLINE RESELLING PLATFORM\obj\Debug\net8.0\OnlineResellingPlatform.genruntimeconfig.cache
 C:\Users\ASUS\source\repos\ONLINE RESELLING PLATFORM\ONLINE RESELLING PLATFORM\obj\Debug\net8.0\ref\OnlineResellingPlatform.dll
+D:\ONLINE-RESELLING-PLATFORM\ONLINE RESELLING PLATFORM\obj\Debug\net8.0\OnlineResellingPlatform.GeneratedMSBuildEditorConfig.editorconfig
+D:\ONLINE-RESELLING-PLATFORM\ONLINE RESELLING PLATFORM\obj\Debug\net8.0\OnlineResellingPlatform.AssemblyInfoInputs.cache
+D:\ONLINE-RESELLING-PLATFORM\ONLINE RESELLING PLATFORM\obj\Debug\net8.0\OnlineResellingPlatform.AssemblyInfo.cs
+D:\ONLINE-RESELLING-PLATFORM\ONLINE RESELLING PLATFORM\obj\Debug\net8.0\OnlineResellingPlatform.csproj.CoreCompileInputs.cache
+D:\ONLINE-RESELLING-PLATFORM\ONLINE RESELLING PLATFORM\obj\Debug\net8.0\OnlineResellingPlatform.sourcelink.json
+D:\ONLINE-RESELLING-PLATFORM\ONLINE RESELLING PLATFORM\obj\Debug\net8.0\OnlineResellingPlatform.dll
+D:\ONLINE-RESELLING-PLATFORM\ONLINE RESELLING PLATFORM\obj\Debug\net8.0\refint\OnlineResellingPlatform.dll
+D:\ONLINE-RESELLING-PLATFORM\ONLINE RESELLING PLATFORM\obj\Debug\net8.0\OnlineResellingPlatform.pdb
+D:\ONLINE-RESELLING-PLATFORM\ONLINE RESELLING PLATFORM\bin\Debug\net8.0\OnlineResellingPlatform.exe
+D:\ONLINE-RESELLING-PLATFORM\ONLINE RESELLING PLATFORM\bin\Debug\net8.0\OnlineResellingPlatform.deps.json
+D:\ONLINE-RESELLING-PLATFORM\ONLINE RESELLING PLATFORM\bin\Debug\net8.0\OnlineResellingPlatform.runtimeconfig.json
+D:\ONLINE-RESELLING-PLATFORM\ONLINE RESELLING PLATFORM\bin\Debug\net8.0\OnlineResellingPlatform.dll
+D:\ONLINE-RESELLING-PLATFORM\ONLINE RESELLING PLATFORM\bin\Debug\net8.0\OnlineResellingPlatform.pdb
+D:\ONLINE-RESELLING-PLATFORM\ONLINE RESELLING PLATFORM\obj\Debug\net8.0\OnlineResellingPlatform.genruntimeconfig.cache
+D:\ONLINE-RESELLING-PLATFORM\ONLINE RESELLING PLATFORM\obj\Debug\net8.0\ref\OnlineResellingPlatform.dll

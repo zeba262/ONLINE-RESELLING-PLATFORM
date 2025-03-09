@@ -5,6 +5,7 @@ using ONLINE_RESELLING_PLATFORM.Interfaces;
 using ONLINE_RESELLING_PLATFORM.ManageProduct;
 using ONLINE_RESELLING_PLATFORM.OrderManagement;
 using ONLINE_RESELLING_PLATFORM.UserFeedback;
+using ONLINE_RESELLING_PLATFORM.SearchProducts;
 
 namespace ONLINE_RESELLING_PLATFORM.Authentication
 {
@@ -73,9 +74,10 @@ namespace ONLINE_RESELLING_PLATFORM.Authentication
                 {
                     Console.WriteLine("\nBuyer Menu:");
                     Console.WriteLine("1. View Products");
-                    Console.WriteLine("2. Place Order");
-                    Console.WriteLine("3. Give Feedback");
-                    Console.WriteLine("4. Logout");
+                    Console.WriteLine("2. Search Products");
+                    Console.WriteLine("3. Place Order");
+                    Console.WriteLine("4. Give Feedback");
+                    Console.WriteLine("5. Logout");
                     Console.Write("Enter your choice: ");
                     choice = Console.ReadLine();
 
@@ -85,12 +87,23 @@ namespace ONLINE_RESELLING_PLATFORM.Authentication
                             new ViewProducts(products).Execute();
                             break;
                         case "2":
-                            new PlaceOrder(products, orders).Execute();
+                            Console.Write("Enter search type (1-Product name, 2-Product category): ");
+                            string ch = Console.ReadLine();
+                            if (ch == "1")
+                                new SearchByName(products).Search();
+                            else if (ch == "2")
+                                new SearchByCategory(products).Search();
+                            else 
+                                Console.WriteLine("Invalid choice");
+
                             break;
                         case "3":
-                            new BuyerFeedback(products, orders).Execute();
+                            new PlaceOrder(products, orders).Execute();
                             break;
                         case "4":
+                            new BuyerFeedback(products, orders).Execute();
+                            break;
+                        case "5":
                             Console.WriteLine("Logged out successfully!");
                             break;
                         default:

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OnlineResellingPlatform")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3b4465a390deb8278fc4bb9c1a4921a2c0a6c4fb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c9711509c090e1427d5c586c2d595391a4f6ad98")]
 [assembly: System.Reflection.AssemblyProductAttribute("OnlineResellingPlatform")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OnlineResellingPlatform")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

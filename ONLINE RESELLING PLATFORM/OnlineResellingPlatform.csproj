@@ -9,7 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="SearchProducts\" />
     <Folder Include="Payment\" />
   </ItemGroup>
 
